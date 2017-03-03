@@ -75,6 +75,9 @@ h3 {
   float: left;
   margin-right: 30px;
 }
+.col_rtxt {
+  text-align: right;
+}
 .row .col:last-child {
   margin-right: 0;
 }
@@ -265,6 +268,10 @@ h3 {
 .section {
   padding: 40px 0 120px 0;
 }
+.section_quotes {
+  background: url(../images/couple-romantic-date.jpg) center/cover;
+  height: 910px;
+}
 .section__heading {
   text-align: center;
   margin: 0 0 5px 0;
@@ -303,4 +310,51 @@ h3 {
   font-size: 20px;
   font-weight: 800;
   color: #384371;
+}
+
+/**
+ * Quotes
+ */
+.quotes__quote-text {
+  margin: 0 0 20px 0;
+}
+.quotes__quote-text::before {
+  content: "\201C";
+}
+.quotes__quote-text::after {
+  content: "\201D";
+}
+.quotes__quote-img {
+  float: left;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.quotes__quote-author,
+.quotes__quote-location {
+  margin: 0;
+  line-height: 18px;
+  font-size: 14px;
+}
+.quotes__quote-author {
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+.quotes__nav {
+  background: url(../images/sprite.png);
+  border: none;
+  text-indent: -99999px;
+  width: 13px;
+  height: 23px;
+  cursor: pointer;
+  margin-top: 28px;
+}
+.quotes__nav_prev {
+  background-position: -168px 0; 
+}
+.quotes__nav_next {
+  background-position: -182px 0;
 }
