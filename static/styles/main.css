@@ -146,12 +146,14 @@ h3 {
 }
 .input::-moz-placeholder { /* Firefox 19+ */
   color: #4f4f4f;
+  opacity: 1;
 }
 .input:-ms-input-placeholder { /* IE 10+ */
   color: #4f4f4f;
 }
 .input:-moz-placeholder { /* Firefox 18- */
   color: #4f4f4f;
+  opacity: 1;
 }
 .select {
   display: inline-block;
@@ -255,4 +257,50 @@ h3 {
 }
 .signup__send {
   margin: 20px auto 60px auto;
+}
+
+/**
+ * Sections
+ */
+.section {
+  padding: 40px 0 120px 0;
+}
+.section__heading {
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+.section__description {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/**
+ * Roadmap
+ */
+.roadmap {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.roadmap::before {
+  content: "";
+  display: block;
+  margin: 30px auto 40px auto;
+  width: 42px;
+  height: 42px;
+  background: url(../images/sprite.png);
+}
+.roadmap_step2::before {
+  background-position: -42px 0; 
+}
+.roadmap_step3::before {
+  background-position: -84px 0; 
+}
+.roadmap_step4::before {
+  background-position: -126px 0; 
+}
+.roadmap__step-num {
+  font-size: 20px;
+  font-weight: 800;
+  color: #384371;
 }
